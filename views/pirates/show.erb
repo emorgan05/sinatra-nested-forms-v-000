@@ -3,12 +3,10 @@
 <p><%= @pirate.height %></p>
 <p><%= @pirate.weight %></p>
 
-
+<h2>First Ship</h2>
 <% @ships.each do |ship| %>
-  <h2>First Ship</h2>
   <%= ship.name %>
   <%= ship.type %>
   <%= ship.booty %>
+  <h2>Second Ship</h2>
 <% end %>
-
-<h2>Second Ship</h2>
