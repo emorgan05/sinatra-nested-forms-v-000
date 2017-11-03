@@ -1,18 +1,18 @@
 <h1>Pirate</h1>
-<p><%= @pirate.name %></p>
-<p><%= @pirate.height %></p>
-<p><%= @pirate.weight %></p>
+<p>Name: <%= @pirate.name %></p>
+<p>Height: <%= @pirate.height %></p>
+<p>Weight: <%= @pirate.weight %></p>
 
 
 <% @ships.each do |ship| %>
   <h2><% if ship == @ships[0] %>
-      First 
+      First
      <% else %>
      Second
-     <% end %> 
+     <% end %>
      Ship</h2>
-     
-  <%= ship.name %>
-  <%= ship.type %>
-  <%= ship.booty %>
+
+  <p>Name: <%= ship.name %></p>
+  <p>Type: <%= ship.type %></p>
+  <p>Booty: <%= ship.booty %></p>
 <% end %>
