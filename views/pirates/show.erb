@@ -1,13 +1,14 @@
-require 'pry'
-
 <h1>Pirate</h1>
 <p><%= @pirate.name %></p>
 <p><%= @pirate.height %></p>
 <p><%= @pirate.weight %></p>
 
-<h2>First Ship</h2>
+
 <% @ships.each do |ship| %>
+  <h2>First Ship</h2>
   <%= ship.name %>
   <%= ship.type %>
   <%= ship.booty %>
 <% end %>
+
+<h2>Second Ship</h2>
